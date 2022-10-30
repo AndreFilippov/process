@@ -100,4 +100,8 @@ class Process implements ProcessInterface {
     public function getMax(): int {
         return $this->max;
     }
+
+    public function isFinish(): bool {
+        return $this->tick >= $this->max;
+    }
 }

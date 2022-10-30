@@ -17,4 +17,5 @@ interface ProcessInterface {
     public function getMin(): int;
     public function getTick(): int;
     public function getMax(): int;
+    public function isFinish(): bool;
 }
