@@ -1,0 +1,15 @@
+{
+    "name": "andrei_filippov/process",
+    "autoload": {
+        "psr-4": {
+            "AndreiFilippov\\Process\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "AndreFilippov",
+            "email": "59467504+AndreFilippov@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
