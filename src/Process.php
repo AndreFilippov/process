@@ -67,7 +67,7 @@ class Process implements ProcessInterface {
     }
 
     public function getAdditionalValue(string $key) {
-        return $this->additionalData[$key];
+        return $this->additionalData[$key] ?? null;
     }
 
     public function tick(int $count = 1): int {
