@@ -18,4 +18,8 @@ interface ProcessInterface {
     public function getTick(): int;
     public function getMax(): int;
     public function isFinish(): bool;
+
+    public function setMin(int $min): void;
+    public function setMax(int $max): void;
+    public function setTick(int $tick): void;
 }
