@@ -104,4 +104,25 @@ class Process implements ProcessInterface {
     public function isFinish(): bool {
         return $this->tick >= $this->max;
     }
+
+    /**
+     * @param int $min
+     */
+    public function setMin(int $min): void {
+        $this->min = $min;
+    }
+
+    /**
+     * @param int $max
+     */
+    public function setMax(int $max): void {
+        $this->max = $max;
+    }
+
+    /**
+     * @param int $tick
+     */
+    public function setTick(int $tick): void {
+        $this->tick = $tick;
+    }
 }
