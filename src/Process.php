@@ -110,6 +110,7 @@ class Process implements ProcessInterface {
      */
     public function setMin(int $min): void {
         $this->min = $min;
+        $this->update();
     }
 
     /**
@@ -117,6 +118,7 @@ class Process implements ProcessInterface {
      */
     public function setMax(int $max): void {
         $this->max = $max;
+        $this->update();
     }
 
     /**
@@ -124,5 +126,6 @@ class Process implements ProcessInterface {
      */
     public function setTick(int $tick): void {
         $this->tick = $tick;
+        $this->update();
     }
 }
